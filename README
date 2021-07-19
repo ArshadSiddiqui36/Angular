@@ -1,0 +1,43 @@
+=> Prerequisite: Node
+
+=> Installing Angular CLI
+* run > npm install -g @angular/cli
+
+=> Basic workflow
+* run > ng help
+* run > ng generate --help
+
+=> Create & Run App
+* run > ng new my-first-project
+* run > cd my-first-project
+* run > ng serve
+
+=> Workspaces and project files
+* run > ng build my-app -c production
+
+=> Add Bootstrap
+* run > npm install bootstrap
+
+=> Add JQuery
+* run > npm install jquery
+
+=> Add Bootstrap CSS & JS in "angular.json" file
+
+  "architect": {
+    "build": {
+      ...
+        "styles": [
+          "src/styles.css",
+          "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+        ],
+        "scripts": [
+          "./node_modules/bootstrap/dist/js/bootstrap.js"
+        ]
+        ...
+    }
+
+
+=> Create New Component
+* run > ng generate component Components_Folder/component_name
+* run > ng generate component MyComponents/component
+
